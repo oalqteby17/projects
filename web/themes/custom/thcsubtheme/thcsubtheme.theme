@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * thc subtheme theme file.
+ */
+
+
+function thc_subtheme_preprocess_page(&$variables) {
+  // Attach your custom library globally to all pages.
+  $variables['#attached']['library'][] = 'thcsubtheme/counter-script';
+  $variables['#attached']['library'][] = 'thcsubtheme/swap-script';
+  
+}
